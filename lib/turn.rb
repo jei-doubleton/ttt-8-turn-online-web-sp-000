@@ -21,3 +21,13 @@ def valid_move?(board, index)
     false
   end
 end
+
+def input_to_index(input)
+  input.to_i - 1
+end
+
+index = input_to_index(input)
+
+def move(board, index, char)
+  board[index] = char
+end
